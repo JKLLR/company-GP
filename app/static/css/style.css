@@ -33,9 +33,10 @@ input{
     width: 40%;
 
 }
+
 .navbar-nav li a:hover{
     color:#f4511e !important;
-    background-color: #070707;
+    background-color: #ffffff;
 }
 
 form {
@@ -49,4 +50,13 @@ form {
     border-color: #d9534f;
     color: #fff
 
+}
+
+.values{
+    background-color: #f6f6f6;
+    padding: 80px;
+}
+
+.values p{
+    color:#818385;
 }

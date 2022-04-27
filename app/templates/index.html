@@ -1,24 +1,23 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    {% include 'navbar.html' %}
+
+{% block styles%}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+{%endblock%}
+
+{% include 'navbar.html' %}
 <div class="jumbotron text-center ">
-    <h1>Company</h1>
+    <h1 class="fs-1">Company</h1>
     <p>We specialize in blablabla</p>
     <div class="input-group m-3 w-50 position-absolute top-50 start-50 translate-middle">
-        <input type="text" class="form-control" placeholder="Email Address" 
-            aria-label="Email Address" aria-describedby="basic-addon2">
+        <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address"
+            aria-describedby="basic-addon2">
         <span class="input-group-text color" id="basic-addon2">Subscribe</span>
-      </div>
+    </div>
 </div>
 {%include 'about.html'%}
 
 
 {% endblock %}
 
-
-{% block footer%}
-<div class="footer" id="footer">
-    <h5>&copy; Index Copyright 2022 by <a href="http://domain.invalid/">you</a>. </h5>
-</div>
-{% endblock %}
