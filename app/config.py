@@ -1,13 +1,12 @@
+from distutils.debug import DEBUG
+
 
 class Config:
-    """"""
-    pass
+    """Parent class"""
 
-class ProdConfig:
-    """"""
-    pass
+class ProdConfig(Config):
+    """Production Confugartins"""
 
-class DevConfig:
-    """"""
-
-DEBUG = True
+class DevConfig(Config):
+    """"Developement Configurationstions"""
+    DEBUG = True
